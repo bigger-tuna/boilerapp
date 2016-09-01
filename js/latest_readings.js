@@ -1,10 +1,10 @@
 // Read PicoBRCK api data
 $(document).ready(function() {
     // main URL
-    var mainUrl = "http://thingspeak.com/channels/148929/feeds.json?";
+    var mainUrl = "https://thingspeak.com/channels/148929/feeds/last.json?";
 
     // url parameters
-   // var urlParams = { api_key : "V5HU45WJ7Z8T0QN1"}
+    var urlParams = { api_key : "V5HU45WJ7Z8T0QN1"}
     
     // success call back function
     var success = function (data) {

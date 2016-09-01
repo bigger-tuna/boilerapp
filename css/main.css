@@ -3,6 +3,25 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*basic page style*/
+.main-container{
+  /*background: img/rainybg.jpg ;*/
+
+}
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+.highlight {
+  margin-bottom: 15px;
+ }
+
+  body, h1, h2, h3, h4, h5, h6,
+  p, blockquote, pre, hr,
+  dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+  }
+
 body {
     color: #111;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -18,29 +37,48 @@ body {
     font-weight: 400;
     line-height: 1.5;
 }
-
+/*end of basic styles*/
+/*circle parameters*/
 .number-circle {
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 2px solid #000;
-    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 75%;
     color: #000;
-    font-size: 80px;
+    font-size: 50px;
     left: 0;
-    line-height: 1.1em;
+    line-height: 1.1;
     margin-left: auto;
     margin-right: auto;
-    padding: 8px;
+    padding: 10px;
     position: relative;
-    width: 210px;
+    width: 100px;
 }
 .number-circle .height_fix {
-    margin-top: 100%;
+    /*margin-top: 100%;*/
 }
+.number-circle .content {
+    height: 100%;
+    left: 0;
+    margin-top: -40px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 50%;
+}
+.number-circle a:hover {
+    background-color: #000;
 
+}
+.img-circle{
+  border: 2px solid #fff;
+    background-color: #fff;
+}
+.img-circle{
+    font-size: 30px;
+}
 a {
     color: #2a7ae2;
     text-decoration: none;
-    //
     color: #2199e8;
     cursor: pointer;
     line-height: inherit;
@@ -49,6 +87,7 @@ a {
 section.content {
     padding: 3rem 0;
 }
+
 .data-summary {
     color: #000;
     text-align: center;
@@ -61,30 +100,61 @@ section.content {
     padding-top: 0.8em;
     text-align: center;
 }
-.number-circle .content {
-    height: 100%;
-    left: 0;
-    margin-top: -40px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
+
+.page-content {
+    padding: 30px 0;
+}
+
+.data-summary h3 span {
+    font-size: 17px;
 }
 .blue {
     color: #70c1f2;
 }
+.orange {
+    color: #eab568;
+}
+.green {
+    color: #9ed8a3;
+}
+.yellow {
+    color: #e26a6a;
+}
+.red {
+    color: #f5d76e;
+}
 
+.channel-data {
+    background-color: #0088C0;
+    border-radius: 5px;
+    color: black;
+    padding: 2px 10px;
+}
+/*weathercharts*/
+.weather-chart {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    display: none;
+}
 
+.weather-graphs h2 {
+    color: #ffffff;
+}
+canvas {
+    height: auto !important;
+    max-width: 800px;
+    width: 100% !important;
+}
+/*end of weathercharts*/
 
-
-
-
-
-
-
-
-
-
-
-
-
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+a {
+    color: #2a7ae2;
+    text-decoration: none;
+}
+.latest-readings{
+  margin-top: 20px;
+  padding-top: 10px;
+}

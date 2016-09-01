@@ -73,8 +73,7 @@ $(document).ready(function() {
         // append data to ID tagged elements
         $( '#channel-id' ).append( channelID );
         $( '#channel-name' ).append( channelName );
-        d = new Date(createdDate);
-        $('#weather-data-time').append(d.toString());
+        
     }
 
     // get data from feeds object
